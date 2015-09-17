@@ -1,0 +1,263 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Title</title>
+<meta name="description" content="">
+<meta name="keywords" content=""/>
+<meta name="author" content="Mario Loncarek">
+<meta name="robots" content="index,follow">
+<meta name="Googlebot" content="all">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- CSS -->
+<link rel="stylesheet" href="../../css/ionicons.min.css">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<!-- JS -->
+<script src="../../js/modernizr-2.8.3.min.js"></script>
+</head>
+<style>
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    color: #e9e9e9;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+h4 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/* OPEN / CLOSE BTNS */
+
+.menu-btn {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    z-index: 999;
+    display: inline;
+    font-size: 32px;
+}
+
+.menu-btn a {
+    display: inline-block;
+    text-decoration: none;
+    /* safari hack */
+}
+
+.btn-open:after {
+    color: #333;
+    content: "\f394";
+    font-family: "Ionicons";
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition-property: all .2s linear 0s;
+}
+
+.btn-open:hover:after {
+    color: #34B484;
+}
+
+.btn-close:after {
+    color: #fff;
+    content: "\f2d7";
+    font-family: "Ionicons";
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition-property: all .2s linear 0s;
+}
+
+.btn-close:hover:after {
+    color: #34B484;
+}
+
+
+/* OVERLAY */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+
+.overlay .menu {
+    margin: 10% auto;
+    width: 80%;
+}
+
+.overlay .menu ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.overlay .menu ul li {
+    float: left;
+    padding: 20px 0;
+    width: 25%;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.overlay .menu ul li a {
+    color: #34B484;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.overlay .menu ul ul {
+    margin-top: 50px;
+}
+
+.overlay .menu ul ul li {
+    position: relative;
+    float: none;
+    margin: 0;
+    width: 100%;
+    border: 0;
+}
+
+.overlay .menu ul ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.overlay .menu ul ul li a:hover {
+    color: #34b484;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .overlay .menu ul li {
+        float: none;
+        margin-bottom: 50px;
+        width: 100%;
+        border-bottom: 1px solid #575757;
+    }
+    .overlay .menu ul li:last-child {
+        border: 0;
+    }
+    .overlay .menu ul ul {
+        margin-top: 20px;
+    }
+    .menu-btn {
+        right: 25px;
+    }
+}
+</style>
+<body>
+    
+<div class="menu-btn">
+    <a class="btn-open" href="javascript:void(0)"></a>
+</div>
+
+<div class="overlay">
+    <div class="menu">
+        <ul>
+
+
+            <li><a href="#">About</a>
+                <ul>
+                    <li><a href="#">About Company</a></li>
+                    <li><a href="#">Designers</a></li>
+                    <li><a href="#">Developers</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Seo</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Work</a>
+                <ul>
+                    <li><a href="#">Web</a></li>
+                    <li><a href="#">Graphics</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Seo</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Social</a>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Codepen</a></li>
+                    <li><a href="#">Behance</a></li>
+                    <li><a href="#">Dribbble</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+
+    
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script>
+$(document).ready(function () {
+
+    $(".menu-btn a").click(function () {
+        $(".overlay").fadeToggle(200);
+        $(this).toggleClass('btn-open').toggleClass('btn-close');
+    });
+
+    $('.overlay').on('click', function () {
+        $(".overlay").fadeToggle(200);
+        $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
+    });
+
+    $('.menu a').on('click', function () {
+        $(".overlay").fadeToggle(200);
+        $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
+    });
+
+});
+</script>
+</body>
+</html>
