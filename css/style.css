@@ -1,0 +1,99 @@
+/* 
+- Name: Responsive overlay menu framework
+- Version: 1.0
+- Latest update: 15.9.2015.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    color: #e9e9e9;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+h4 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+
+/* OPEN / CLOSE BTNS */
+
+.menu-btn {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    z-index: 999;
+    display: inline;
+    font-size: 32px;
+}
+
+.menu-btn a {
+    display: inline-block;
+    text-decoration: none;
+    /* safari hack */
+}
+
+.btn-open:after {
+    color: #333;
+    content: "\f394";
+    font-family: "Ionicons";
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition-property: all .2s linear 0s;
+}
+
+.btn-open:hover:after {
+    color: #34B484;
+}
+
+.btn-close:after {
+    color: #fff;
+    content: "\f2d7";
+    font-family: "Ionicons";
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition-property: all .2s linear 0s;
+}
+
+.btn-close:hover:after {
+    color: #34B484;
+}
+
+
+/* OVERLAY */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        right: 25px;
+    }
+}
