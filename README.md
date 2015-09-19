@@ -153,7 +153,7 @@ $(document).ready(function () {
     });
 });
 ```
-targets hamburger button and opens overlay class. That means that you can open and close overlay when clicking on hamburer menu. Your menu will work with just that part.
+Targets hamburger button and opens overlay class. That means that you can open and close overlay when clicking on hamburer menu. Your menu will work with just that part.
 
 ## Usage #2: Closing menu when clicking anywhere on overlay
 
@@ -201,3 +201,4 @@ This plugin is tested with all options and is working on **ALL browsers** includ
 # Made with (thanks)
 - [Jquery](http://jquery.com/)
 - [Ionicons](http://ionicons.com/)
+- [Codepen](http://codepen.io)
