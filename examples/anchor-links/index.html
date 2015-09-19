@@ -131,10 +131,11 @@ a {
 
 .menu li {
     display: table;
+    float: left;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 25%;
+    width: 25%;
+    height: 100%;
     list-style: none;
     text-align: center;
     -webkit-transition: all .2s linear 0s;
@@ -160,6 +161,11 @@ a {
     .menu-btn {
         right: 25px;
     }
+    .menu li {
+        float: none;
+        width: 100%;
+        height: 25%;
+    }
 }
 </style>
 <body>
@@ -171,13 +177,18 @@ a {
 <div class="overlay">
     <div class="menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </div>
+
+<h4 style="margin: 500px 0" id="home">HOME</h4>
+<h4 style="margin: 500px 0" id="about">ABOUT</h4>
+<h4 style="margin: 500px 0" id="services">SERVICES</h4>
+<h4 style="margin: 500px 0" id="contact">CONTACT</h4>
     
 <script src="../../js/jquery-1.11.3.min.js"></script>
 <script>
@@ -186,11 +197,6 @@ $(document).ready(function () {
     $(".menu-btn a").click(function () {
         $(".overlay").fadeToggle(200);
         $(this).toggleClass('btn-open').toggleClass('btn-close');
-    });
-
-    $('.overlay').on('click', function () {
-        $(".overlay").fadeToggle(200);
-        $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
     });
 
     $('.menu a').on('click', function () {
