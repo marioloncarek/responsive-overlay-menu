@@ -1,6 +1,7 @@
-$(document).ready(function () {
+(function ($) {
 
     $(".menu-btn a").click(function () {
+        event.preventDefault();
         $(".overlay").fadeToggle(200);
         $(this).toggleClass('btn-open').toggleClass('btn-close');
     });
@@ -11,8 +12,9 @@ $(document).ready(function () {
     });
 
     $('.menu a').on('click', function () {
+        event.preventDefault();
         $(".overlay").fadeToggle(200);
         $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
     });
 
-});
+}(jQuery));
